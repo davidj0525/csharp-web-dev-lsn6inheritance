@@ -22,9 +22,15 @@ namespace Cats
 
         public override string Noise()
         {
-            return "Hello, my name is " + Name + "!";
+            if (IsSatisfied())
+            {
+                return "Hello, my name is " + Name + "!";
+            }
+            else
+            {
+                return "I'm not satisfied, because I'm a fucking cat.";
+            }
         }
-
         public string Purr()
         {
             return "I'm a housecat";

@@ -2,7 +2,7 @@
 
 namespace Cats
 {
-    public class Cat
+    public abstract class Cat
     {
         public bool Tired { get; set; } = false;
         public bool Hungry { get; set; } = false;
@@ -32,10 +32,7 @@ namespace Cats
             Hungry = false;
         }
 
-        public virtual string Noise()
-        {
-            return "Meow!";
-        }
+        public abstract string Noise();
 
     }
 }
